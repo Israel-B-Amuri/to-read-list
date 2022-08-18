@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 :root{
     --darkGreen: #045256;
@@ -14,11 +13,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     font-family: 'Popins',sans-serif;
     font-size: 1.2rem;
-    line-height: 1.15;
+    line-height: 1;
     background-color: #eef2f2;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
 }
 .heading{
     color: var(--darkGreen);
@@ -28,9 +30,12 @@ body{
     padding: 25px 0;
     display: flex;
     gap: 2rem;
+    max-width: 15rem;
+    width: 100%;
 }
 .inputs input{
-    width: 20rem;
+    max-width: 20rem;
+    width: 100%;
     height: 2rem;
     border: var(--darkGreen) 2px solid;
     border-radius: 10px;
@@ -56,15 +61,44 @@ body{
 }
 .books-section{
     margin-top: 20px;
-    padding: 25px 0;
-    border: 2px solid var(--blackishGreen);
+    padding: 5px 0;
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.book{
+.books-section ul{
+    width: 100%;
+}
+.book-container{
     display: flex;
-    gap: 2rem;
+    width: 100%;
+    margin: 0.1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+.book-container li{
+    flex: 1;
+}
+.book{
+    background-color: white;
+    padding: .5em;
+}
+.checkButton,.delete-button{
+    background-color: #0b1516;
+    border: none;
+    color: #ddf7f8;
+    padding: .8rem;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.delete-button{
+    background-color: #045256;
+    color: #ddf7f8;
+}
+.checkButton{
+    background-color: #9ab8ba;
+    color: #045256;
 }

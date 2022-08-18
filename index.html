@@ -15,33 +15,20 @@
     <div class="container">
       <h1 class="heading">My To Read App</h1>
       <div class="inputs">
-        <input type="text" class="input" id="input-section" />
-        <button>Add</button>
+        <label for="input-section">
+          <input
+            type="text"
+            class="input"
+            id="input-section"
+            placeholder="enter the book name"
+          />
+        </label>
+        <button class="input-button" n type="submit">Add</button>
       </div>
     </div>
 
     <div class="books-section">
-      <div class="book">
-        <p class="tittle">Atomic Habits</p>
-        <div class="buttons">
-          <span class="delete">Delete</span>
-          <span class="completed">Completed</span>
-        </div>
-      </div>
-      <div class="book">
-        <p class="tittle">Solo Ride</p>
-        <div class="buttons">
-          <span class="delete">Delete</span>
-          <span class="completed">Completed</span>
-        </div>
-      </div>
-      <div class="book">
-        <p class="tittle">Think Like a Monk</p>
-        <div class="buttons">
-          <span class="delete">Delete</span>
-          <span class="completed">Completed</span>
-        </div>
-      </div>
+      <ul></ul>
     </div>
     <script src="app.js"></script>
   </body>
