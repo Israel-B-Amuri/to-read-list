@@ -14,6 +14,7 @@ function addbook() {
   const deleteButton = document.createElement("button");
   const checkButton = document.createElement("button");
   const div = document.createElement("div");
+
   //adding features to the div
   div.classList.add("book-container");
 
@@ -49,6 +50,6 @@ function deleteFunction(e) {
   if (item.classList[0] === "checkButton") {
     const book = item.parentElement;
 
-    book.classList.add("completed");
+    book.classList.toggle("completed");
   }
 }

@@ -22,42 +22,47 @@ body{
 li{
     list-style: none;
 }
+.container{
+    margin: 5rem 0 0;
+}
 .heading{
     color: var(--darkGreen);
     font-weight: bold;
 }
 .inputs{
-    padding: 25px 0;
+    margin: 55px 0 10px;
     display: flex;
     gap: 2rem;
-    max-width: 15rem;
-    width: 100%;
+    max-width: 45rem;
 }
 .inputs input{
     max-width: 20rem;
-    width: 100%;
+    width: 400px;
+    padding: 3px;
     height: 2rem;
     border: var(--darkGreen) 2px solid;
     border-radius: 10px;
     box-shadow: 8px 8px 10px rgba(9, 68, 61, 0.2);
     outline: var(--darkGreen);
+    font-size: 1rem;
 }
 .inputs button{
-    width: 3rem;
-    height: 2rem;
+    width: 5rem;
+    height: 2.5rem;
+    text-align: center;
     border: none;
     background-color: var(--darkGreen);
     border-radius: 6px;
     color: var(--whitishGreen);
     box-shadow: 8px 8px 10px rgba(9, 68, 61, 0.2);
-    font-size: 1.2rem;
     font-weight: 500;
+    font-size: 1.2rem;
 }
 .inputs button:hover{
     background-color: var(--whitishGreen);
     color: var(--darkGreen);
     border: var(--darkGreen) solid 2px;
-    transition: 300ms ease-in-out;
+    transition: .5s ease-in-out;
 }
 .books-section{
     margin-top: 20px;
@@ -93,6 +98,7 @@ li{
     padding: .8rem;
     font-size: .9rem;
     cursor: pointer;
+    font-weight: bold;
 }
 .delete-button{
     background-color: #045256;
@@ -101,4 +107,30 @@ li{
 .checkButton{
     background-color: #9ab8ba;
     color: #045256;
+}
+.completed{
+    opacity: .3;
+    transition: all .8s ease-in-out;
+}
+@media (max-width:50em) {
+    .heading{
+        font-size: 2rem;
+
+    }
+    .inputs{
+        width: 15em;
+        gap: 1rem;
+    }
+    .inputs input{
+        width: 15em;
+    }
+    .inputs button{
+        padding: .5em;
+    }
+    .books-section ul{
+    gap: 2rem;
+    }
+    .book-container li{
+        width: 80%;
+    }
 }
